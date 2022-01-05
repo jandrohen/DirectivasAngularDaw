@@ -327,6 +327,8 @@
 
 <div class="content" role="main">
 
+  <button (click)="condition = !condition">Ver</button>
+  <div *ngIf="condition">
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -349,7 +351,9 @@
     </svg>
 
   </div>
+</div>
 
+  <P>Valor de la condicion: {{ condition }}</P>
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>

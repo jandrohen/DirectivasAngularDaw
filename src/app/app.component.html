@@ -415,9 +415,18 @@
 
     </div>
   </ng-template>
-  <P>Valor de la condicion: {{ condition }}</P>
+  <P>Valor de la condición: {{ condition }}</P>
   <!-- Resources -->
   <h2>Resources</h2>
+  <ul style="display:flex; list-style: none;" [ngSwitch]="numero_mes">
+    <li *ngSwitchCase="'Enero'">Primer mes del año:  </li>
+    <li *ngSwitchCase="'Febrero'">Segundo mes del año:  </li>
+    <li *ngSwitchCase="'Marzo'">Tercer mes del año:  </li>
+    <li *ngSwitchDefault>Orden mes del año:  </li>
+    <input  type="text" [(ngModel)]="numero_mes" />
+  </ul>
+
+
   <p>Here are some links to help you get started:</p>
 
   <div class="card-container">

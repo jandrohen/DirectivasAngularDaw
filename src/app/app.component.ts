@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'DirectivasJandrohen';
   condition = true;
   numero_mes!: string;
+  vblecolor!: string;
 }

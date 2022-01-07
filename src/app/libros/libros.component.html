@@ -1,0 +1,9 @@
+<h3>Directiva ngFor</h3>
+<h5>(Click en el indice para ver los autores)</h5>
+<ul style="list-style: none">
+  <li *ngFor="let libro of libros; index as indice; first as primero">
+    <a style="cursor: pointer;" (click)="showAuthor(libro)">{{indice}}</a>-
+    <a href="https://www.google.com/search?q={{libro.titulo}}">{{libro.titulo}}</a>
+    <span *ngIf="primero"> - Best Seller"</span>
+  </li>
+</ul>
